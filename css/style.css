@@ -1,0 +1,272 @@
+body{
+  font-family: Helvetica, sans-serif;
+}
+
+footer{
+  text-align: center;
+  color:white;
+  background-color: black;
+  width:100%;
+  height:60px;
+  padding:15px;
+  margin:5px;
+}
+
+ul{
+    text-align: right;
+    height:100%;
+    maring-left:15%;
+    width:80%;
+    flex:left;
+}
+
+li {
+    display: inline;
+    padding-top:100px;
+}
+
+a{
+    text-decoration:none;
+    color:#ffffff;
+    font-family:Helvetica, sans-serif;
+    font-size:30px;
+    padding:10px;
+    margin:20px;
+
+}
+
+.nav{
+    width:100%;
+    height:60px;
+    background-color: #222222;
+    display:flex;
+
+}
+
+#logo{
+    flex:left;
+    width:15%;
+    padding:5px;
+}
+
+.container{
+    width:100%;
+    height:100%;
+
+}
+
+.container2{
+    width:100%;
+
+}
+
+#page1{
+    width:100%;
+    height:100%;
+    background-image: url('../images/firstPage.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% 90%;
+    padding-top: 75px;
+    text-align: center;
+    color:#222222;
+    font-family: Helvetica, sans-serif;
+}
+
+#word{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid black; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  animation:
+    typing 5s steps(60, end),
+    blink-caret 3s step-end;
+}
+
+#word2{
+  color:#201e78;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid black; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  animation:
+    typing 10s steps(80, end),
+    blink-caret 5s step-end;
+}
+
+#page2{
+  text-align: center;
+  background-color: #222222;
+  width:100%;
+
+}
+
+
+#page3{
+  text-align: center;
+  border-top:8px solid white;
+  width:100%;
+  height:800px;
+  background-color: #222222;
+}
+
+.row{
+   display:flex;
+   width:100%;
+   height:700px;
+
+}
+
+.cell{
+   flex:left;
+   width:33%;
+   background-color: white;
+   margin:5% auto;
+   color:#222222;
+}
+
+.middle{
+   background-color: #222222;
+   color:#ffffff;
+   width:100%;
+   margin:0 auto;
+   padding-top:20px;
+}
+
+
+.work{
+  width:75%;
+  height:75%;
+
+}
+
+
+a.github{
+  color:#222222;
+  width:100%;
+  text-align:center;
+  font-size:20px;
+  padding:0;
+  margin:0;
+
+}
+
+a.email{
+  color:#222222;
+}
+
+#contact{
+  color:#222222;
+  text-align: center;
+}
+
+.linkicons{
+   width:35%;
+   height:100px;
+   margin:0 auto;
+   display:flex;
+}
+
+.icon{
+   height:80px;
+   width:30%;
+   flex:left;
+   margin:0 auto;
+   padding:20px;
+}
+
+img.icons{
+   height:50px;
+   width:50px;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+@media only screen and (max-width: 500px) {
+  .container2{
+
+  }
+  #page3{
+      height:1200px;
+  }
+  .row{
+      display:inline;
+      width:100%;
+      height:700px;
+  }
+
+  .cell{
+      display:block;
+      width:100%;
+      height:600px;
+  }
+
+  #word{
+     white-space: normal;
+     animation:
+        typing 2s steps(40, end),
+        blink-caret 2s step-end;
+  }
+
+  #word2{
+     white-space: normal;
+     animation:
+        typing 4s steps(60, end),
+        blink-caret 3s step-end;
+  }
+  .nav{
+    width:100%;
+    height:220px;
+    background-color: #222222;
+    display:inline-block;
+
+  }
+
+  ul{
+    text-align: center;
+    height:100%;
+  }
+
+  li {
+    display: block;
+    padding-top:0;
+  }
+
+  #logo{
+    margin:0 auto;
+    width:140px;
+  }
+
+  .anchorlogo{
+    margin:0 autos;
+  }
+
+  .linkicons{
+    width:100%;
+    margin:10px auto;
+  }
+
+  .icon{
+     margin:0 auto;
+     width:33%;
+     padding:3px;
+   }
+
+   a.github{
+     padding:0;
+   }
+   .middle{
+
+   }
+}
