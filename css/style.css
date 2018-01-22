@@ -159,13 +159,16 @@ a.email{
 #contact{
   color:#222222;
   text-align: center;
+  display:flex;
+  height:340px;
 }
 
 .linkicons{
    width:35%;
    height:100px;
-   margin:0 auto;
+   margin:30px auto;
    display:flex;
+
 }
 
 .icon{
@@ -181,6 +184,48 @@ img.icons{
    width:50px;
 }
 
+#contactLeft{
+  width:45%;
+  margin: 50px;
+}
+
+form{
+  display:block;
+  width:45%;
+  height:330px;
+  text-align:center;
+  margin: 0 auto;
+  color: #222222;
+}
+
+input[type=email]{
+  width:50%;
+  height:20%;
+  border:3px #dddddd solid;
+  text-align:center;
+  font-size:20px;
+  margin:2px;
+}
+
+button[type=submit]{
+  width:50%;
+  height:35px;
+  border:3px #359173 solid;
+  font-weight: 800;
+  margin:2px;
+  font-size:20px;
+  color:#359173;
+}
+textarea[name=message]{
+  width:50%;
+  height:150px;
+  border:3px #dddddd solid;
+  font-size:20px;
+  margin:2px;
+  text-align: center;
+  padding:10px;
+}
+
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
@@ -194,9 +239,7 @@ img.icons{
 }
 
 @media only screen and (max-width: 500px) {
-  .container2{
 
-  }
   #page3{
       height:1200px;
   }
@@ -254,7 +297,7 @@ img.icons{
 
   .linkicons{
     width:100%;
-    margin:10px auto;
+    margin:30px auto;
   }
 
   .icon{
@@ -266,7 +309,34 @@ img.icons{
    a.github{
      padding:0;
    }
-   .middle{
 
+
+   #contact{
+     display:block;
+     height:520px;
+   }
+
+   #contactLeft{
+     width:100%;
+     margin: 20px auto;
+   }
+
+   form{
+     border-top: 3px black solid;
+     border-bottom:3px black solid;
+     margin: 20px 0 20px 0;
+     width:100%;
+   }
+
+   input[type=email]{
+     width:90%;
+   }
+
+   textarea[name=message]{
+     width:90%;
+   }
+
+   button[type=submit]{
+     width:90%;
    }
 }
